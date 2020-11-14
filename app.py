@@ -26,7 +26,7 @@ sys.modules['sklearn.externals.six'] = six
 #from sktime.forecasting.all import plot_ys
 import time
 #st.beta_set_page_config(layout="wide")
-
+st.set_option('deprecation.showfileUploaderEncoding', False)
 
 st.sidebar.title("Upload Your Sales History")
 uploaded_file = st.sidebar.file_uploader("Upload a file in csv format", type=("csv"))
